@@ -7,7 +7,7 @@
  */
 
 return [
-        'dsn'   => 'mysql:host=localhost;dbname=modern_mvc;charset=utf8',
+        'dsn'   => 'mysql:host=localhost;dbname=aizenktest;charset=utf8',
         'user'  => 'root',
         'pass'  => '123',
 ];

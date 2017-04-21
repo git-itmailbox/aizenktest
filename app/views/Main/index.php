@@ -1,29 +1,18 @@
-<h1>INDEX</h1>
 <div class="container">
-    <table class="table table-bordered table-striped">
-        <tr>
-            <th>id</th>
-            <th>category</th>
-            <th>text</th>
-            <th>title</th>
-            <th>excerpt</th>
-            <th>keywords</th>
-            <th>description</th>
-        </tr>
-        <?php if(!empty($posts)): ?>
-        <?php foreach ($posts as $post): ?>
-        <tr>
-            <td><?= $post->id ?></td>
-            <td><?= $post->category_id?></td>
-            <td><?= $post->text?></td>
-            <td><?= $post->title ?></td>
-            <td><?= $post->excerpt ?></td>
-            <td><?= $post->keywords ?></td>
-            <td><?= $post->description ?></td>
-        </tr>
-        <?php endforeach; ?>
-        <?php endif; ?>
+    <h3>Введите свое имя и нажмите кнопку "Start" для начала теста</h3>
 
+    <form action="" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <div class=form-control">
+                    <label for="name">Ваше имя: </label>
+                    <input type="text" id="name" name="name" required>
+                    <button type="submit" class="btn btn-primary">Start</button>
+                </div>
 
-    </table>
+            </div>
+        </div>
+
+    </form>
+
 </div>

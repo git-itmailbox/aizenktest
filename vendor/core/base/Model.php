@@ -14,6 +14,7 @@ class Model
 {
     protected $pdo;
     protected $table;
+    protected $pk = 'id';
 
     function __construct()
     {
@@ -31,8 +32,11 @@ class Model
         return $this->pdo->query($sql);
     }
 
-    public function findOne($id, $field)
+    public function findOne($id, $field='')
     {
+        $field = $field ?: $this->pk;
+        $sql = "SELECT * FROM {$this->table} WHERE $field=? LIMIT 1;";
+        return $this->pdo->queryOneRow( $sql, [$id]);
 
     }
 }

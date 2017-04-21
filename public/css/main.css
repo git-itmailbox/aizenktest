@@ -1,3 +1,7 @@
 body {
-    background-color: #9acfea;
+    background-color: #c1dbf6;
+}
+.controlgroup-textinput{
+    padding-top:.22em;
+    padding-bottom:.22em;
 }
